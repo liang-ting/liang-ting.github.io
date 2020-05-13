@@ -1,0 +1,79 @@
+.back {
+	padding: 0 auto 0 auto;
+	background: -webkit-radial-gradient(ellipse,white,orange);
+	background: -o-radial-gradient(ellipse,white,orange);
+	background: -moz-radial-gradient(ellipse,white,orange);
+	background: radial-gradient(ellipse,white,orange);
+	border-width:7px;
+	border-style:solid;
+	border-color: red;
+}
+
+.t {
+	font-family: Microsoft JhengHei, monospace,serif,sans-serif,cursive,fantasy;
+	color: white;
+	text-align:center;
+	font-size: x-large;
+	margin: 1em auto 1em auto;
+	background-color: black;
+	border-collapse:collapse;
+	border: 1px solid;
+	border-color: yellow;
+}
+
+th {
+	padding:10px;
+}
+
+td {
+	padding: 0.2em;
+	border-collapse:collapse;
+	border: 1px solid;
+	border-color: yellow;
+}
+
+blockquote {
+	font-family: Microsoft JhengHei,monospace,serif,sans-serif,cursive,fantasy;
+	margin: 1em 10% 1em 10%;
+	background-color: yellow;
+	font-size: large;
+	text-align:center;
+	line-height: 2em;
+	border: 1px solid;
+	border-color: black;
+	border-radius: 16px;
+}
+
+input[type="button"] {
+	font-family: Microsoft JhengHei,monospace,serif,sans-serif,cursive,fantasy;
+	font-size: x-large;
+	font-weight:bold;
+	color: white;
+	width:100px;
+	height:60px;
+	border:3px white solid;
+	border-radius: 30px;
+	background-color:darkblue;
+}
+.abc {
+	text-align:center;
+}
+
+h1 {  
+	margin: 0 0 0 0;
+	font-family: monospace,serif,sans-serif,cursive,fantasy;
+	font-size: 3em;
+	text-align:center;
+	line-height: 2em;
+	background-color: #00FF00;
+}
+
+.grid {
+	display: grid;
+	margin: 1em 6% 2em 6%;
+	padding: 0 2% 0 2%;
+	grid-template-columns: repeat(3, 1fr);
+	border: 3px dotted;
+	border-color: blue;
+	border-radius: 16px;
+}

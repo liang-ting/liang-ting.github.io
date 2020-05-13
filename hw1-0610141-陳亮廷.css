@@ -1,0 +1,294 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+.back {
+	padding: 0 auto 0 auto;
+	background: -webkit-radial-gradient(ellipse,white,orange);
+	background: -o-radial-gradient(ellipse,white,orange);
+	background: -moz-radial-gradient(ellipse,white,orange);
+	background: radial-gradient(ellipse,white,orange);
+	border-width:7px;
+	border-style:solid;
+	border-color: red;
+}
+
+.t {
+	font-family: Microsoft JhengHei, monospace,serif,sans-serif,cursive,fantasy;
+	color: white;
+	text-align:center;
+	font-size: x-large;
+	margin: 1em auto 1em auto;
+	background-color: black;
+	border-collapse:collapse;
+	border: 1px solid;
+	border-color: yellow;
+}
+
+th {
+	padding:10px;
+}
+
+td {
+	padding: 0.2em;
+	border-collapse:collapse;
+	border: 1px solid;
+	border-color: yellow;
+}
+
+blockquote {
+	font-family: Microsoft JhengHei,monospace,serif,sans-serif,cursive,fantasy;
+	margin: 1em 10% 1em 10%;
+	background-color: yellow;
+	font-size: large;
+	text-align:center;
+	line-height: 2em;
+	border: 1px solid;
+	border-color: black;
+	border-radius: 16px;
+}
+
+input[type="button"] {
+	font-family: Microsoft JhengHei,monospace,serif,sans-serif,cursive,fantasy;
+	font-size: x-large;
+	font-weight:bold;
+	color: white;
+	width:150px;
+	height:60px;
+	border:3px white solid;
+	border-top-right-radius: 21px;
+	border-top-left-radius: 21px;
+	background-color:#8100E0;
+}
+ul#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+     
+ul#menu li {
+   display: inline; 
+}
+
+ul#menu li a {
+	font-family: Microsoft JhengHei,monospace,serif,sans-serif,cursive,fantasy;
+	font-size:x-large;
+	font-weight:bold;
+	color: white;
+	display: inline-block;
+	line-height: 56px ;
+	width:150px;
+	height:54px;
+	border:3px white solid;
+	border-top-right-radius: 21px;
+	border-top-left-radius: 21px;
+	background-color:#8100E0;
+	text-decoration: none;
+	text-align: center; 
+}
+
+ul#menu li a:hover {
+	background-color: #990DFF;
+	/*color: red;*/
+	width:180px;
+}
+
+@media screen and (max-width: 1000px) {
+	ul#menu li { display: block;  }
+}
+.abc {
+	text-align:center;
+}
+
+.grid {
+	display: grid;
+	margin: 1em 6% 2em 6%;
+	padding: 0 2% 0 2%;
+	grid-template-columns: repeat(3, 1fr);
+	border: 3px dotted;
+	border-color: blue;
+	border-radius: 16px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px sans-serif;
+}
+.wrapper {
+	width: 100%;
+	/*min-width: 1000px;*/
+	/*padding: 0 auto 0 auto;
+	background: -webkit-radial-gradient(ellipse,white,orange);
+	background: -o-radial-gradient(ellipse,white,orange);
+	background: -moz-radial-gradient(ellipse,white,orange);
+	background: radial-gradient(ellipse,white,orange);
+	border-width:3px;
+	border-style:solid;
+	border-color: red;*/
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	/*height: 150px;*/
+	background: #FFE680;
+	margin: 0 0 0 0;
+	padding-right: 50px; 
+	font-family: monospace,serif,sans-serif,cursive,fantasy;
+	font-size: 4em;
+	text-align:right;
+	line-height: 2em;
+	/*background-color: #00FF00;*/
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.nav {
+	height: auto;
+	background: yellow;
+	/*border: 3px solid;
+	border-color: red;*/
+	border-top: 3px solid;
+	border-color: #00000;
+	/*border-bottom: 3px solid white;*/
+	padding: 0 0 0 480px;
+}
+
+.content {
+	background: #8CFF8C;
+	padding: 20px 80px 100px 400px;
+}
+
+.about_me{
+	border: 3px double;
+	border-color: #00000;
+	border-radius: 25px;
+	padding: 50px;
+	background: #FFD4FF	;
+}
+
+.title {
+	font-family: Microsoft JhengHei,monospace,serif,sans-serif,cursive,fantasy;
+	/*margin: 1em 10% 1em 10%;*/
+	/*background-color: yellow;*/
+	font-size: x-large;
+	font-weight:bold;
+	text-align:left;
+	line-height: 2em;
+	/*border: 1px solid;
+	/*border-color: black;
+	border-radius: 16px;*/
+}
+.text {
+	font-family: Microsoft JhengHei,monospace,serif,sans-serif,cursive,fantasy;
+	font-size: large;
+	line-height: 2em;
+	text-align:left;
+	text-indent: 20px;
+}
+.photo {
+	border: 3px solid;
+	border-color: white;
+	margin: 50px 0 0 50px;
+}
+.photo_title {
+	margin: 0 0 0 0;
+	padding-right: 50px; 
+	padding-left: 50px; 
+	font-family: Microsoft JhengHei, monospace,serif,sans-serif,cursive,fantasy;
+	font-size: 3em;
+	text-align:center;
+	line-height: 2em;
+	border: 3px dotted;
+	border-radius: 50px;
+	border-color: #00000;
+	background: #FFFFD4	;
+}
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	float: left;
+	padding: 25px 25px 25px 25px;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	border-top: 3px solid;
+	border-right: 3px solid;
+	border-bottom: 3px solid;
+	border-color: #00000;
+	background: #B5E3FF;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	padding-top: 10px;
+	text-align:center;
+	font-family: monospace,serif,sans-serif,cursive,fantasy;
+	color: white;
+	height: 50px;
+	border-top: 2px solid;
+	border-color: yellow;
+	background: darkblue;
+}
