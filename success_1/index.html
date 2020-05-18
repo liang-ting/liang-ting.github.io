@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+	<input type="file" id="input">
+	<button onclick="mouse_in5()">upload</button>
+<button onclick="app()">run</button>
+
+    <img id="img_target" crossorigin src="https://liang-ting.github.io/image/IMG_0970.png" width="227" height="227"/>
+    <img id="img_style" crossorigin src="https://reiinakano.com/arbitrary-image-stylization-tfjs/images/seaport.jpg" width="227" height="227"/>
+    <!--<video autoplay playsinline muted id="webcam" width="227" height="227"></video>-->
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+	     <div class="col-md-6 offset-md-3">
+            <canvas id="stylized" class="centered"></canvas>
+         </div>
+
+  </body>
+</html>
