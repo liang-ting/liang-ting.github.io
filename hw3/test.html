@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>onmousemove</title>
+		<style type="text/css">
+			#box1{
+				width:100px;
+				height:100px;
+				background-color:red;
+				
+				/*開啟box1的絕對定位*/
+				position:absolute;
+			}
+		
+		</style>
+		
+		<script type="text/javascript">
+			/*
+			 *使div可以跟隨滑鼠移動
+			 * */
+			window.onload = function(){
+			
+			//獲取box1
+				var box1 = document.getElementById("box1");
+				//繫結滑鼠移動事件
+				document.onmousemove = function(event){
+					//解決相容問題
+					event = event || window.event;
+					
+					//獲取滾動滾動的距離。
+					//chrome認為滾動條是body。
+					//火狐等認為是瀏覽器的滾動條是html的。
+					var st = document.body.scrollTop || document.documentElement.scrollTop;
+					
+					var sl = document.body.scrollLeft || document.documentElement.scrollLeft;
+					
+					console.log(st);
+					
+					
+					
+					//獲取到滑鼠的座標
+					//用於獲取滑鼠在當前的可見視窗的座標
+					//在IE8中不支援 相容IE8 則不要使用
+					var left = event.clientX;
+					var top = event.clientY;
+					
+					//設定div的偏移量
+					box1.style.left = left+ sl + "px";
+					box1.style.top = top+ st +"px";
+				}
+			}
+			
+		</script>
+		
+		
+	</head>
+	<body style="height:5000px;">
+		
+		<div id="box1">
+			
+			
+			
+		</div>
+		
+		
+	</body>
+</html>
