@@ -1,0 +1,218 @@
+body
+{
+	background-color:#3C3C3C;
+	color:white;
+	font-family: Helvetica, Arial, LiHei Pro, 黑體-繁, 微軟正黑體, sans-serif;
+	padding-bottom:50px;
+}
+
+a{
+	color:white;
+	text-align:center;
+}
+button{
+	font-family: Helvetica, Arial, LiHei Pro, 黑體-繁, 微軟正黑體, sans-serif;
+}
+
+#console
+{
+	position:relative;
+	margin:auto;
+	width:100px;	
+}
+
+h1
+{
+	text-align:center;
+}
+
+
+#img_target, #stylized_single
+{
+	position:absolute;
+	width:400px;
+	height:400px;
+	top:50px;
+	border:solid;
+}
+#img_target
+{
+	left:90px;
+}
+#stylized_single
+{	
+	right:90px;
+}
+
+#container2
+{
+	position:relative;
+	margin:auto;
+	width:1100px;
+	height:450px;
+	background-color:#019858;
+	padding:50px;
+	border:3px double white;
+	border-radius:20px;
+}
+
+#input, #default
+{
+	position:absolute;
+	top:490px;
+}
+#input
+{
+	left:240px;
+}
+#default
+{
+	left:110px;
+}
+
+#run,#console2
+{
+	position:absolute;
+}
+
+#run
+{
+	left:570px;
+	top:230px;	
+}
+
+#console2
+{
+	left:554px;
+	top:273px;
+}
+
+#draw{
+	position:absolute;
+	top:490px;
+	left:700px;
+	width:100px;
+	height:30px;
+	color:white;
+	background-color: black;
+	border:2px solid white;
+	border-radius:20px;
+}
+#save{
+	position:absolute;
+	top:470px;
+	left:1050px;
+	width:62px;
+	height:57px;
+	color:red;
+	background-color: yellow;
+	/*border:2px solid black;*/
+	border-radius:60px;
+	padding-top:5px;
+}
+
+#rgb{
+	position:absolute;
+	top:470px;
+	left:820px;
+}
+
+#show
+{
+	position:absolute;
+	top:485px;
+	left:970px;
+	width:30px;
+	height:30px;
+	background-color: black;
+	border:2px solid white;
+	border-radius:30px;
+}
+
+
+#container
+{
+	position:relative;
+	width:427px;
+	height:380px;
+	margin:auto;
+	background-color:#019858;
+	margin-bottom:30px;
+	margin-top:30px;
+	border:3px double white;
+	border-radius:20px;
+}
+
+#img_style
+{
+	position:absolute;
+	left:100px;
+	top:80px;
+}
+
+#Style
+{
+	position:absolute;
+	left:170px;
+	top:330px;
+}
+
+#sg, #wc
+{
+	position:absolute;
+	top:30px;
+}
+#wc
+{
+	right:90px;
+}
+
+#sg
+{
+	left:90px;
+}
+
+#container3
+{
+	position:relative;
+	width:400px;
+	height:550px;
+	margin:auto;
+	background-color:#019858;
+	margin-top:30px;
+	display:none;
+	border:3px double white;
+	border-radius:20px;
+}
+#run2
+{
+	position:absolute;
+	left:180px;
+	top:30px;
+}
+#console3
+{
+	position:absolute;
+	left:170px;
+	top:500px;
+}
+
+#stylized_webcam
+{
+	position:absolute;
+	border:solid;
+	top:65px;
+	left:50px;
+	width:300px;
+	height:400px;
+}
+
+footer
+{
+	margin-top:50px;
+	text-align:center;
+}
+
+
+
+
