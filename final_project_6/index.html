@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/@tensorflow/tfjs"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type = "text/css" href="proto.css">
+	<link rel="stylesheet" type = "text/css" href="myslider.css">
+	<link rel="stylesheet" type = "text/css" href="loading.css">
+	<link rel="stylesheet" type = "text/css" href="index.css">
+	<title>圖片風格轉換器</title>
+</head>
+<body>
+	<h1>圖片風格轉換器</h1>
+	<div id="console"></div>
+	
+	<div id="container4">
+		<div id="con4_text">是否使用兩種圖片風格?</div>
+		<div class="onoffswitch">
+			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+			<label class="onoffswitch-label" for="myonoffswitch">
+				<span class="onoffswitch-inner"></span>
+				<span class="onoffswitch-switch"></span>
+			</label>
+		</div>
+	</div>
+	
+	<div id="container">
+		<div id="sg"><input type="radio" id="file" checked="true" name="butt"  value="1" onclick="single()">單張照片輸入</div>
+		<div id="wc"><input type="radio" id="cam"  name="butt"  value="2" onclick="cam()">Webcam輸入</div>
+		<img id="img_style" src="style/style1.jpg" width="227" height="227"/>
+		<img id="img_style2" src="style/style2.jpg" width="227" height="227"/>
+		
+		<select id="Style" onchange="BN()">
+		<option value="1">素描</option>
+		<option value="2">方格</option>
+		<option value="3">方格+顏色</option>
+		<option value="4">線條</option>
+		<option value="5">線條+顏色</option>
+		<option value="6">馬賽克</option>
+		<option value="7">蜂巢</option>
+		</select>
+		<div class="slidecontainer">
+			<div id="slide_text">調整兩種風格的比例</div>
+			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+			<div id="ratio"></div>
+		</div>
+
+		<select id="Style2" onchange="BN2()">
+		<option value="1">素描</option>
+		<option selected="selected" value="2">方格</option>
+		<option value="3">方格+顏色</option>
+		<option value="4">線條</option>
+		<option value="5">線條+顏色</option>
+		<option value="6">馬賽克</option>
+		<option value="7">蜂巢</option>
+		</select>
+	</div>
+		
+	<div id="container2">
+		<img id="img_target" crossorigin src="https://liang-ting.github.io/image/IMG_0970.png"/>
+		<!--<div onclick="app()" id="run">轉換</div>-->
+		<div class="abgne-loading-20140104-2" id="run" onclick="app()">
+			<div class="loading"></div>
+			<div class="word">轉換</div>
+		</div>
+
+		<canvas id="stylized_single" class="centered"></canvas>
+		<input type="file" id="input" onchange="mouse_in5()">
+		<button onclick="Default()" id="default">預設圖片</button>
+		<button onclick="drawing()" id="draw">開始畫畫!</button>
+		<div class="color" id="rgb">
+			R<input id="red" type="range" name="points" min="0" max="255" value="0"><br>
+			G<input id="green" type="range" name="points" min="0" max="255" value="0"><br>
+			B<input id="blue" type="range" name="points" min="0" max="255" value="0">
+		</div>
+		<div id="show"></div>
+		<div id="console2"></div>
+		<a id="save" href="#" download="stylized_photo.png" ><img id="download" src="iconfinder_Arrow_doodle_13_3847916.png" width="50" height="50"/></a>
+	</div>
+	
+	<div id="container3">
+		<!--<div onclick="app()" id="run2">轉換</div>-->
+		<div onclick="app()" class="abgne-loading-20140104-2" id="run2">
+			<div class="loading"></div>
+			<div class="word">轉換</div>
+		</div>
+		<canvas id="stylized_webcam" class="centered"></canvas>
+		<div id="console3"></div>
+	</div>
+    
+	<div  style="display:none">
+    <video autoplay playsinline muted id="webcam" width="300" height="400"></video>
+	</div>
+    <!-- Load index.js after the content of the page -->
+    <script src="draw.js"></script>
+    <script src="index.js"></script>
+</body>
+
+<footer> reference: reiinakano's blog &nbsp &nbsp &nbsp
+	<a href="https://magenta.tensorflow.org/blog/2018/12/20/style-transfer-js/" target="_blank" title="reiinakano's blog">https://magenta.tensorflow.org/blog/2018/12/20/style-transfer-js/</a>
+</footer>
+</html>
